@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* header styling */
+nav {
+  background-color: cornflowerblue;
+  color: gainsboro;
+}
+
+nav p {
+  margin-top: .5vw;
+}
+
+.header-div {
+  margin-bottom: 16vw;
+}
