@@ -2,7 +2,7 @@
 >  An Angular 5 Example App, made while I was learning Angular.
 
 ## Demo
-Live demo, <a href="www.todo-example-app.com">Click Me!</a>
+Live demo, <a href="https://www.todo-example-app.com">Click Me!</a>
 
 
 ## Features
