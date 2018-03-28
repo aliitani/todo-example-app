@@ -1,5 +1,15 @@
 <div class="panel panel-warning">
-  <div class="panel-heading">Chart</div>
+  <div class="panel-heading"><span class="fa fa-info"></span>  Chart Information</div>
+  <div class="contain-chart">
+    <div class="col-md-12">
+      <p class="text-center">
+        <span class="label label-danger">Priority:</span>   {{ priority }}% | <span class="label label-info">Done:</span>   {{ done }}% | <span class="label label-warning">Undone:</span>   {{ normal }}%
+      </p>
+    </div>
+  </div>
+</div>
+<div class="panel panel-warning">
+  <div class="panel-heading"><span class="fa fa-pie-chart"></span>  Chart</div>
     <div style="display: block">
       <canvas baseChart
               [data]="doughnutChartData"

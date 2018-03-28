@@ -1,5 +1,5 @@
 <div class="panel panel-warning">
-  <div class="panel-heading">Priority</div>
+  <div class="panel-heading"><span class="fa fa-arrow-up"></span>  Priority</div>
     <ul class="list-group list-group-flush" id="priority_tasks" >
       <li class="list-group-item" *ngFor="let task of tasks">{{ task.name }}</li>
       <ng-container *ngIf="exist_priority()">

@@ -30,7 +30,19 @@ export class TasksDataService {
     for (let i = 0; i < delete_tasks_list.length; i++) {
       this.tasks.splice(delete_tasks_list[i], 1);
     }
-    console.log(this.tasks.length);
+
+    if (this.get_done_tasks_size() > 0) {
+      for (let i = 0; i < this.tasks.length; i++) {
+        if (this.tasks[i].done === true) {
+          delete_tasks_list.push(i);
+        }
+      }
+
+      for (let i = 0; i < delete_tasks_list.length; i++) {
+        this.tasks.splice(delete_tasks_list[i], 1);
+      }
+    }
+
     return this.tasks;
   }
 
