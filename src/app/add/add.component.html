@@ -1,0 +1,11 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Add a task!</div>
+  <div class="contain">
+    <div class="input-group input-group-lg">
+      <input type="text" class="form-control" aria-label="..." (keyup.enter)="add_Atask()" [(ngModel)]="task_to_add">
+      <div class="input-group-btn">
+        <button class="btn btn-success glyphicon glyphicon-plus" (click)="add_Atask()" ></button>
+      </div>
+    </div>
+  </div>
+</div>

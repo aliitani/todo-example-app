@@ -1,0 +1,9 @@
+<div class="panel panel-warning">
+  <div class="panel-heading">Priority</div>
+    <ul class="list-group list-group-flush" id="priority_tasks" >
+      <li class="list-group-item" *ngFor="let task of tasks">{{ task.name }}</li>
+      <ng-container *ngIf="exist_priority()">
+        <li class="list-group-item text-bold">I guess notcd every task is a priority..</li>
+      </ng-container>
+    </ul>
+</div>

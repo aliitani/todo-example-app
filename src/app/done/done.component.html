@@ -1,0 +1,9 @@
+<div class="panel panel-success">
+  <div class="panel-heading">Done</div>
+    <ul class="list-group list-group-flush" id="done_tasks">
+      <li class="list-group-item" *ngFor="let task of tasks">{{ task.name }}</li>
+      <ng-container *ngIf="tasks.length === 0">
+        <li class="list-group-item text-bold">Nothing done yet...</li>
+      </ng-container>
+    </ul>
+</div>

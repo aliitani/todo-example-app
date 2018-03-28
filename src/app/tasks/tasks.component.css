@@ -1,0 +1,8 @@
+tr {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+td div i:hover {
+  cursor: pointer;
+}

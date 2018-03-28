@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Task Sheet</div>
+  <ng-container *ngIf="tasks.length !== 0">
+    <table class="table table-bordered">
+      <thead >
+      <tr class="bg-info">
+        <th class="col-md-1"><div class="text-center">#</div></th>
+        <th class="col-md-10"><div class="text-center">Task</div></th>
+        <th class="col-md-1"><div class="text-center">Done</div></th>
+        <th class="col-md-1"><div class="text-center">Priority</div></th>
+        <th class="col-md-1"><div class="text-center">Remove</div></th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let task of tasks; let i = index">
+        <tr>
+          <td class="col-md-1"><div class="text-center"><p >{{ (i + 1)}}</p></div></td>
+          <td class="col-md-10"><p>{{ task.name }}</p></td>
+          <td class="col-md-1"><div class="text-center"><span class="btn btn-success"  (click)="set_done(task.id)"><i class="glyphicon glyphicon-ok"></i></span></div></td>
+          <td class="col-md-1"><div class="text-center"><span class="btn btn-warning" (click)="set_priority(task.id)"><i [class]="task.priority === true ? 'glyphicon glyphicon-star' : 'glyphicon glyphicon-star-empty'" ></i></span></div></td>
+          <td class="col-md-1"><div class="text-center"><span class="btn btn-danger" (click)="remove_task(task.id)"><i class="glyphicon glyphicon-remove"></i></span></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
+  <ng-container *ngIf="tasks.length === 0">
+    <div class="list-group-item">
+      <p class="text-bold">You should be adding more tasks?!</p>
+    </div>
+  </ng-container>
+</div>

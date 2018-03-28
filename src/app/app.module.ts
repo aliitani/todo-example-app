@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
+import { DeleteTasksComponent } from './delete-tasks/delete-tasks.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     DoneComponent,
     HeaderComponent,
     TasksComponent,
-    AddComponent
+    AddComponent,
+    DeleteTasksComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
