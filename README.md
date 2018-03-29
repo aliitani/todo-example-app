@@ -3,7 +3,7 @@
 
 ## Firebase
 - Currently the app is hosted on Firebase Web Hosting.
-  **Live Demo**, <a href="https://www.todo-example-app.com">Check it out here!</a>
+  **Live Demo**, <a href="https://todo-example-app.com">Check it out here!</a>
 
 ## Overview:
 - The App is basically a TO-DO app where a user is able to add tasks to their task list, and is able to prioritize certain tasks, look at the chart implemented from ng-charts for more motivation and insight, and a user can remove a task as well as set a task to 'done' and they will be able to see all the changes go through the chart as well.
