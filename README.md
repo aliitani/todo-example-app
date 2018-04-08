@@ -18,6 +18,7 @@
 ## Implementation
 - I used **Angular cli** ver 1.6.4 (Angular 5)
 - I used **Twitter Bootstrap 3** & **Font-Awesome**.
+- I also add ng-Charts & ngx-Toastr
 
 ## License
 - MIT
