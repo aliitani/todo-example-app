@@ -21,11 +21,4 @@ export class DeleteTasksComponent implements OnInit {
     this.tasksService.set_on_chart_changes.emit();
   }
 
-  delete_done() {
-    this.tasksService.set_new_task_list.emit(this.tasksService.delete_d_tasks());
-    this.tasksService.set_new_done_tasks.emit(this.tasksService.get_done_tasks());
-    this.tasksService.set_new_priority_task.emit(this.tasksService.get_priority_tasks());
-    this.tasksService.set_on_chart_changes.emit();
-  }
-
 }

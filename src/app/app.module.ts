@@ -12,6 +12,8 @@ import { AddComponent } from './add/add.component';
 import { FormsModule } from '@angular/forms';
 import { DeleteTasksComponent } from './delete-tasks/delete-tasks.component';
 import { LinksComponent } from './links/links.component';
+import {ToastrModule} from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { LinksComponent } from './links/links.component';
   imports: [
     BrowserModule,
     ChartsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
